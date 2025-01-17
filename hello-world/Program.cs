@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HelloWorldApp
+namespace helloWorld
 {
     public class helloWorld
     {
@@ -8,5 +8,5 @@ namespace HelloWorldApp
         {
             Console.WriteLine("Hello World!");
         }
-    }    
+    }
 }
