@@ -46,6 +46,16 @@ namespace variables
             Console.WriteLine("myIntArray[0]: " + myIntArray[0]);
             Console.WriteLine("myStringArray[1]: " + myStringArray[1]);
             
+            // can cast variables to other types (if possible)
+            int myIntFromDouble = (int) myDouble;
+            double myDoubleFromInt = myInt;
+            Console.WriteLine("myIntFromDouble: " + myIntFromDouble);
+            
+            // can parse strings to other types (if possible)
+            string myStringFromInt = "10";
+            int myIntFromString = int.Parse(myStringFromInt);
+            Console.WriteLine("myIntFromString: " + myIntFromString);
+            
             // later on there will be more complex data structures like dictionaries and lists that are more flexible
         }
     }
