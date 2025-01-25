@@ -72,6 +72,23 @@ namespace objects
             Days day2 = Days.Tuesday; // gets the enum value of Tuesday
             Console.WriteLine("Day: " + day1);
             Console.WriteLine("Day: " + day2);
+        
+            // other useful objects
+            Random random = new Random();
+            int randomNumber = random.Next(1, 11); // generates a random number between 1 and 10
+            Console.WriteLine("Random number: " + randomNumber);
+            
+            DateTime now = DateTime.Now;
+            Console.WriteLine("Now: " + now);
+            Console.WriteLine("Year: " + now.Year);
+            Console.WriteLine("Month: " + now.Month);
+            Console.WriteLine("Day: " + now.Day);
+            Console.WriteLine("Hour: " + now.Hour);
+            Console.WriteLine("Minute: " + now.Minute);
+            Console.WriteLine("Second: " + now.Second);
+            
+            TimeSpan timeSpan = new TimeSpan(1, 2, 3, 4, 5); // 1 day, 2 hours, 3 minutes, 4 seconds, 5 milliseconds
+            Console.WriteLine("Time span: " + timeSpan);
         }
     }
 }
